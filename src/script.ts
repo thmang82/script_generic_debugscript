@@ -33,6 +33,7 @@ export class MyScript implements Script.Class<ScriptConfig> {
 
         console.info("Ident:" + specification.id_ident);
         console.info("Config:", this.config);
+        console.log("Version: ", specification.version);
     }
 
     public sendToDisplay = <T extends ProvidedSources>(ident: T, data: DataSourcesTypes.MapData<T>) => {
